@@ -1,0 +1,386 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: "titulo";
+    src: url(../font/hello_darling_2/Hello\ Darling.ttf);
+}
+
+body{ 
+    background-image: url("../css/img/fondo.webp");
+    height: 100%;
+    width: 100%;
+    background-size:cover;
+    background-attachment: scroll;
+
+}
+/*index*/
+.contenedor{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
+    grid-template-rows: 70px 300px auto 100px;
+    grid-template-areas: "nav nav nav nav nav"
+                         "header header header header header"
+                         "main main main main aside"
+                         "footer footer footer footer footer";
+}
+#navegacion{
+    grid-area: nav;
+    text-align: left;
+
+}
+#encabezado{
+    grid-area: header;
+}
+#principal{
+    grid-area: main;
+}
+#secundario{ 
+    grid-area: aside;
+}
+#pie{
+    grid-area: footer;
+    
+}
+
+@media(min-width: 480px){
+    .contenedor{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 70px 300px auto 100px;
+        grid-template-areas: " nav nav nav"
+                             "header header header"
+                             "main main aside"
+                             "footer footer footer";
+}
+     #navegacion{
+        font-family: Arial;
+                                
+    }
+                              
+     ul{
+        display: none;
+    }
+                              
+     input:checked  ~ ul{
+         display:block;
+     }
+                              
+      input {
+         display: none;
+     }
+                              
+      label {
+         box-sizing: border-box;
+         display: inline-block;
+         border: 1px solid black;
+         border-radius: 5px;
+         width: 30px;
+         height: 30px;
+         line-height: 30px;
+         font-weight: bold;
+         text-align: center;
+         user-select: none;
+     }
+                              
+     /* Estilo del boton*/
+     .label:hover{
+         background: grey;
+    }
+                              
+     /* Estilo del boton cuando el menú está expandido*/
+     input:checked ~ label {
+     background: lightgrey;
+    }
+                              
+     ul{
+     margin-top:0;
+     padding: 0;
+     width: 200px;
+     
+}
+                                      
+     li {
+     display: block;
+     background: lightgrey;
+     margin: 0;
+     padding: 10px;
+     list-style: none;
+     border-bottom: 1px solid grey;
+    }
+                              
+     /*Estilo cuando el mouse pasa encima de cada link del menu*/
+     li:hover {
+     filter: brightness(110%);
+     }
+   
+
+
+@media(min-width: 768px){
+    .contenedor{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 70px 300px auto 100px;
+        grid-template-areas: "nav nav nav"
+                             "header header header"
+                             " main main aside"
+                             "footer footer footer";
+}
+@media(min-width: 1200px){
+     .contenedor{
+         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+         grid-template-rows: 70px 300px auto 100px;
+         grid-template-areas: "nav nav nav nav nav"
+                             "header header header header header"
+                             "main main main main aside"
+                             "footer footer footer footer footer";  }
+                        
+
+
+
+.tamañoParrafo1{
+    font-size: 40px;
+}
+
+.tituloColor{
+font-family: "titulo";
+font-weight: 100;
+font-size: 100px;
+color: rgb(73, 36, 36);
+text-align: center;
+text-decoration:underline;
+background-color: rgb(227, 192, 192);
+}
+.presentacion{
+    color: rgb(95, 54, 5);
+    font-style: oblique;
+    width: 100%;
+    height: 30%;
+    background-color: rgb(255, 238, 238);
+    padding: 0px;
+    margin: 60px 0px;
+    border-top: dotted 5px rgb(114, 58, 58);
+    border-bottom: dotted 5px rgb(114, 58, 58);
+
+
+}
+
+
+.muestra{
+    color: rgb(53, 28, 28);
+    font-size: 35px;
+    font-family: sans-serif;
+    
+}
+
+#navegacion a { text-decoration:none; padding: 15px; font-weight:bold; display: inline-block; }
+    #navegacion a:link { color:rgb(255, 255, 255); background-color: rgb(221, 187, 187); }
+    #navegacion a:visited { color:rgb(255, 255, 255); background-color: rgb(144, 114, 114);}
+    #navegacion a:hover { color:rgb(255, 255, 255); background-color:rgb(212, 193, 193); }
+    #navegacion a:active { color:rgb(255, 255, 255); background-color:rgb(170, 144, 144); }
+#social{
+        width:48px;
+        position:fixed;
+        top: 50px;
+        right:0;
+       
+    }
+
+    
+#social{
+        
+        top:50%;
+        height:205px;
+        margin-top:-100px;
+        text-align: center;
+       
+    }
+
+#pie {
+    font-size: 20px;
+    color: rgb(80, 40, 40);
+    text-align: center;
+}
+
+/*Html Relojes*/
+.contenedorTarjetas{
+    display: grid;
+    height: 50%;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+    padding: 20px;
+    margin: 10px;
+    grid-template-rows: 250px ;
+    column-gap: 20px;
+    row-gap: 100px;
+}
+.tarjeta{
+    
+    width: 150px;
+    height: 250px;
+    background-color: rgb(215, 173, 173);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 5px 5px 10px 5px rgb(62, 28, 28);
+}
+.tarjeta__titulo{
+    color: rgb(73, 36, 36);
+    font-style:normal;
+    font-size: 20px;
+}
+
+.tarjeta_boton{
+    font-style: normal;
+font-size: 20px;
+color: rgb(73, 36, 36);
+text-align: center;
+}
+.top{
+font-style: oblique;
+font-weight: 50;
+font-size: 65px;
+color: rgb(73, 36, 36);
+text-align: center;
+text-decoration: wavy;
+margin: 40px;
+}
+.lista{
+    text-align: center ;
+    color: brown;
+    background-color: rgb(231, 190, 190);
+    font-size: 40px;
+}
+.video{
+    text-align: center ;
+    color: brown;
+    font-size: 30px;
+    font-style:oblique;
+    margin: 30px;
+}
+
+/*Html catalogo*/
+.catalogo{
+    font-style: oblique;
+font-weight: 50;
+font-size: 65px;
+color: rgb(73, 36, 36);
+text-align: center;
+text-decoration: wavy;
+margin: 40px;
+}
+.listaCat{
+    text-align: center ;
+    color: brown;
+    font-size: 40px;
+}
+
+/*Html informacion*/
+.oro{
+    font-style: oblique;
+font-weight: 50;
+font-size: 65px;
+color: rgb(73, 36, 36);
+text-align: center;
+text-decoration: wavy;
+margin: 40px;
+}
+
+.tabla{
+width: 100%;
+   text-align:center;
+   border-collapse: collapse;
+   margin: 0 0 1em 0;
+   caption-side: top;
+    text-align: center;
+    width: 100%;
+    border: 1px dotted rgb(93, 49, 49);
+    background-color: rgb(160, 131, 131);
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+}
+
+/*Html Recibir*/
+.enviar{
+font-style: normal;
+font-size: 30px;
+color: rgb(73, 36, 36);
+text-align: center;
+margin: 40px;
+}
+
+.selec{
+    color:rgb(71, 19, 19);
+    font-size: 30px;
+    border: bottom 20px;
+}
+.elegir{
+    font-style: normal;
+font-size: 30px;
+color: rgb(73, 36, 36);
+text-align:left;
+margin: 0px;
+}
+.pref{
+    color:rgb(71, 19, 19);
+    font-size: 30px;
+    border: bottom 30px;
+    margin: 10px;
+    
+}
+.fin{
+    font-style: normal;
+font-size: 50px;
+color: rgb(73, 36, 36);
+text-align: center;
+margin: 40px;
+}
+
+/*Html contactos*/
+.formulario{
+font-style: normal;
+font-size: 40px;
+display: flex;
+margin: 0 auto;
+text-align-last: center;
+color: rgb(122, 83, 83);
+
+}
+.part{
+    font-style: normal;
+font-size: 50px;
+color: rgb(73, 36, 36);
+text-align: center;
+margin: 40px;
+}
+.escriba{
+    font-style: normal;
+font-size: 60px;
+color: rgb(73, 36, 36);
+text-align: center;
+margin: 40px;
+}
+.enviarf{
+    font-style: normal;
+    font-size: 30px;
+    color: rgb(73, 36, 36);
+    text-align: center;
+    margin: 40px;
+    order: 2;
+}
+.enviarc{
+    font-style: normal;
+    font-size: 30px;
+    color: rgb(73, 36, 36);
+    text-align: center;
+    margin: 40px;
+    order: 1;
+}
+.cont-formulario{   
+    background-color: rgb(203, 176, 176);
+    height: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:column;
+    justify-content: space-between;
+    align-items:center;
+}
