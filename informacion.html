@@ -11,16 +11,38 @@
 
 <body class="contenedor">
     <!--Menu nav-->
-    <div id="navegacion">
-        <nav class="navegacion">
-        <a href="./index.html">Inicio</a>
-        <a href="relojes.html">Relojes</a>
-        <a href="listacatalogo.html">Nuestro catalogo</a>
-        <a href="informacion.html">Información del oro puro</a>
-        <a href= "recibir.html">Solicitar información por E-mail</a>
-        <a href="contactos.html">Contactos</a>
-        <a href="#pie">Direccion y 0800</a>
-    </nav>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">Inicio</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="relojes.html">Relojes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contactos.html">Contactos</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="informacion.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Mas
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="listacatalogo.html">Catalogo</a></li>
+                  <li><a class="dropdown-item" href="recibir.html">Recibir</a></li>
+                  <li><a class="dropdown-item" href="informacion.html">Informacion</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Buscar</button>
+            </form>
+          </div>
+        </div>
+      </nav>
     
     <header class="encabezado">
     <p class="oro">Los colores del oro y su pureza</p>

@@ -11,35 +11,51 @@
 </head>
 <body class="contenedor">
     <!--Menu nav-->
-
-    <div id="navegacion">
-        <nav class="navegacion">
-        <input type="checkbox" id="menu">
-        <label for="menu"> ☰ </label>
-        <ul>
-        <li><a href="./index.html">Inicio</a></li>
-        <li><a href="relojes.html">Relojes</a></li>
-        <li><a href="listacatalogo.html">Nuestro catalogo</a></li>
-        <li><a href="informacion.html">Información del oro puro</a></li>
-        <li><a href= "recibir.html">Solicitar información por E-mail</a></li>
-        <li><a href="contactos.html">Contactos</a></li>
-        <li><a href="#pie">Direccion y 0800</a></li>
-        </ul>
-    </nav>
-    </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">Inicio</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="relojes.html">Relojes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contactos.html">Contactos</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="informacion.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Mas
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="listacatalogo.html">Catalogo</a></li>
+                  <li><a class="dropdown-item" href="recibir.html">Recibir</a></li>
+                  <li><a class="dropdown-item" href="informacion.html">Informacion</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Buscar</button>
+            </form>
+          </div>
+        </div>
+      </nav>
     <div class="row justify-content-center">
 <div class="container-fluid">
     
     <!--Titulo y presentacion-->
     <header class="encabezado">
      
-    <p class="titulo tituloColor">JOYERIA CD</p>
+    <p class="titulo tituloColor col-xs-12">JOYERIA CD</p>
     <div class="presentacion">
-        <p class="colorParrafo1 tamañoParrafo1">Somos una casa que se dedica a realizar las mejores joyas de la ciudad, contamos con un espacioso local en el cual pueden venir a visitarnos y mirar todas nuestras hermosas joyas, relojes, tenemos una gran variedad en lo que busques para completar tu outfit o para regalar en ese momento tan importante para vos! Visitanos!!!</p>
+        <p class="colorParrafo1 tamañoParrafo1  ">Somos una casa que se dedica a realizar las mejores joyas de la ciudad, contamos con un espacioso local en el cual pueden venir a visitarnos y mirar todas nuestras hermosas joyas, relojes, tenemos una gran variedad en lo que busques para completar tu outfit o para regalar en ese momento tan importante para vos! Visitanos!!!</p>
     </div>
     </header>
     <!--Imagen y video-->
-    <main class="pricipal">
+    <main class="pricipalcol-xs-12 ">
 
     <img src="./assets/css/img/apertura-joyas-small-ku5B--1200x630@abc.jpg" width=" 900px" height=" 400px" alt="apertura"></a>    
     <div class="muestra">
