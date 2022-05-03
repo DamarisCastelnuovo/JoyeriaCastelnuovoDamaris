@@ -16,44 +16,8 @@ body{
 
 }
 /*index*/
-.contenedor{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 
-    grid-template-rows: 70px 300px auto 100px;
-    grid-template-areas: "nav nav nav nav nav"
-                         "header header header header header"
-                         "main main main main aside"
-                         "footer footer footer footer footer";
-}
-#navegacion{
-    grid-area: nav;
-    text-align: left;
 
-}
-#encabezado{
-    grid-area: header;
-}
-#principal{
-    grid-area: main;
-}
-#secundario{ 
-    grid-area: aside;
-}
-#pie{
-    grid-area: footer;
-    
-}
-
-@media(min-width: 480px){
-    .contenedor{
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 70px 300px auto 100px;
-        grid-template-areas: " nav nav nav"
-                             "header header header"
-                             "main main aside"
-                             "footer footer footer";
-}
      #navegacion{
         font-family: Arial;
                                 
@@ -115,26 +79,8 @@ body{
      filter: brightness(110%);
      }
    
+    
 
-
-@media(min-width: 768px){
-    .contenedor{
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 70px 300px auto 100px;
-        grid-template-areas: "nav nav nav"
-                             "header header header"
-                             " main main aside"
-                             "footer footer footer";
-}
-@media(min-width: 1200px){
-     .contenedor{
-         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-         grid-template-rows: 70px 300px auto 100px;
-         grid-template-areas: "nav nav nav nav nav"
-                             "header header header header header"
-                             "main main main main aside"
-                             "footer footer footer footer footer";  }
-                        
 
 
 
@@ -150,7 +96,6 @@ font-family: "titulo";
 font-weight: 100;
 font-size: 100px;
 color: rgb(73, 36, 36);
-text-align: center;
 text-decoration:underline;
 background-color: rgb(227, 192, 192);
 }
@@ -227,9 +172,9 @@ background-color: rgb(227, 192, 192);
 }
 .contenedorTarjetas{
    width: 100px;
-    display: grid;
-    height: 50%;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+   display: grid;
+   height: 50%;
+   grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
     padding: 20px;
     margin: 10px;
     grid-template-rows: 250px ;
