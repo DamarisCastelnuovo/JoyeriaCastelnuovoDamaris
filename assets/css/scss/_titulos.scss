@@ -1,0 +1,25 @@
+.tituloColor{
+    animation-name: movi;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    font-family: "titulo";
+    font-weight: 100;
+    font-size: 100px;
+    color: rgb(73, 36, 36);
+    text-decoration:underline;
+    background-color: rgb(227, 192, 192);
+    }
+    @keyframes movi {
+        0%{
+            transform: translate(0px, 0px);
+        }
+        25%{
+            transform:translate(50px, 0px);
+        }
+        0%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 1;
+        }
+    }
