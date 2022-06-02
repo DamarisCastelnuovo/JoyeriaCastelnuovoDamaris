@@ -1,0 +1,48 @@
+.formulario{
+    font-style: normal;
+    font-size: 40px;
+    display: flex;
+    margin: 0 auto;
+    text-align-last: center;
+    color: rgb(122, 83, 83);
+    
+    }
+    .part{
+        font-style: normal;
+    font-size: 50px;
+    color: rgb(73, 36, 36);
+    text-align: center;
+    margin: 40px;
+    }
+    .escriba{
+        font-style: normal;
+    font-size: 60px;
+    color: rgb(73, 36, 36);
+    text-align: center;
+    margin: 40px;
+    }
+    .enviarf{
+        font-style: normal;
+        font-size: 30px;
+        color: rgb(73, 36, 36);
+        text-align: center;
+        margin: 40px;
+        order: 2;
+    }
+    .enviarc{
+        font-style: normal;
+        font-size: 30px;
+        color: rgb(73, 36, 36);
+        text-align: center;
+        margin: 40px;
+        order: 1;
+    }
+    .cont-formulario{   
+        background-color: rgb(203, 176, 176);
+        height: 50%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction:column;
+        justify-content: space-between;
+        align-items:center;
+    }

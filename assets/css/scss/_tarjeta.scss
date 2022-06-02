@@ -1,0 +1,63 @@
+.tarjeta:hover{
+    transform: translate(20px, -30px);
+    transition: all 2s;
+    width: 200px;
+}
+.contenedorTarjetas{
+   width: 100px;
+   display: grid;
+   height: 50%;
+   grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+    padding: 20px;
+    margin: 10px;
+    grid-template-rows: 250px ;
+    column-gap: 20px;
+    row-gap: 100px;
+}
+.tarjeta{
+    width : map-get($tarjeta , width );
+    height: map-get($tarjeta , height );
+    background-color: map-get($tarjeta , background-color );
+    border-radius: map-get($tarjeta, border-radius);
+    padding: map-get($tarjeta , padding );
+    margin: map-get($tarjeta , margin );
+    box-shadow: map-get($tarjeta , box-shadow ); }
+.tarjeta__titulo{
+    color: rgb(73, 36, 36);
+    font-style: $disenioTarj;
+    font-size: $tarjetaTituloTamanio ; }
+.tarjeta_boton:hover{
+    transform: rotate(360deg);
+    transition: all 2s; }
+.tarjeta_boton{
+    font-style: $disenioTarj;
+font-size: $tarjetaTituloTamanio;
+color: rgb(73, 36, 36);
+text-align: center; 
+}
+
+
+
+/* Estilo del boton*/
+.label:hover{
+    @include propiedadesPrincipales(rgb(255, 204, 204), rgb(155, 45, 45), 100px, auto);
+    @extend .tarjeta_boton;
+    
+}
+                         
+                         
+ul{
+margin-top:0;
+padding: 0;
+width: 200px;
+
+}
+                                 
+li {
+display: block;
+background: rgb(248, 205, 205);
+margin: 0;
+padding: 10px;
+list-style: none;
+border-bottom: 1px solid rgb(73, 36, 36); 
+}
